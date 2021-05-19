@@ -9,3 +9,4 @@ for item in array
         count = count + 1
     end
 end
+puts count
