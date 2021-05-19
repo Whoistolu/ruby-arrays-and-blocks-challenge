@@ -1,6 +1,6 @@
 # Given an array, how many items are greater than 5?
 
-def how_many_items_are_greaer_than(number, array)
+def how_many_items_are_greaer_than number, array
     count = 0
     for item in array
         if item is > 5
