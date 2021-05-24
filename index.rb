@@ -71,3 +71,27 @@ a.concat(b)   #=> [1, 2, 3, 3, 4, 5]
 To find the difference between two arrays, you can subtract them using -. This method returns a copy of the first array, removing any elements that appear in the second array.
 
 [1, 1, 1, 2, 2, 3, 4] - [1, 4]  #=> [2, 2, 3]
+
+Basic Methods
+Ruby gives you many methods to manipulate arrays and their contents (over 150!), many of which are beyond the scope of this lesson. For full documentation, go to http://ruby-doc.org/, click on “Core API”, scroll down to the Classes section, and click on “Array”. There, you’ll find the most up-to-date documentation on the various methods available to Ruby arrays along with explanations.
+
+As previously mentioned, there are many methods available to Ruby arrays, and the behavior of some methods change depending on a variety of factors, such as if they take arguments or not. Therefore, ruby-doc.org will be your best friend in maximizing your aptitude with arrays. So visit soon, and visit often.
+
+Calling the #methods method on an array will also yield a long list of the available methods.
+
+num_array.methods       #=> A very long list of methods
+Here is a brief look at some other common array methods you might run into:
+
+[].empty?               #=> true
+[[]].empty?             #=> false
+[1, 2].empty?           #=> false
+
+[1, 2, 3].length        #=> 3
+
+[1, 2, 3].reverse       #=> [3, 2, 1]
+
+[1, 2, 3].include?(3)   #=> true
+[1, 2, 3].include?("3") #=> false
+
+[1, 2, 3].join          #=> "123"
+[1, 2, 3].join("-")     #=> "1-2-3"
